@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/header-image.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 95vh;
+}
+
+.logo-img {
+    width: 14%;
+
+}
+
+/* navbar */
+
+.nav-lang {
+    margin-right: 20px;
+}
+.language select {
+    background: transparent;
+    color: white;
+    padding: 4px 35px;
+    appearance: none;
+    border-radius: 5px;
+}
+.language img {
+    filter: invert();
+    top: 8px;
+    left: 10px;
+}
+.language .language-choose {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+    top: 15px;
+    right: -115px;
+}
+
+.red-btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 5px 15px;
+}
+
+.red-btn:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+/* main heading */
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.main-second-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main-third-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+form {
+    width: 65%;
+}
+
+form #floatingInput {
+    color: white;
+}
+form .form-control{
+    border-color: gray;
+}
+form .form-control:focus {
+    border-color: white;
+    box-shadow: none;
+    border-width: medium;
+}
+
+form .form-floating>.form-control:focus~label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form .form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+form .form-floating {
+    width: 35%;
+}
+
+form #floatingInput {
+    background: transparent;
+}
+
+form label {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+}
+
+.get-started-btn {
+    height: 58px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.get-started-btn::after {
+    content: "\276F";
+    margin-left: 10px;
+}
+
+/* section one */
+.section-title {
+    font-size: 3rem;
+    font-weight: 900
+}
+
+.section-details {
+    font-size: 1.5rem;
+    font-weight: 400
+}
+
+.section-one {
+    border-top: 8px solid #232323;
+}
+
+.section-two,
+.section-four {
+    border-top: 8px solid #232323;
+    border-bottom: 8px solid #232323;
+}
+
+/* FAQ */
+
+.faq-mainhead {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.faq-section button {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq-section .accordion {
+    --bs-accordion-color: rgb(255, 255, 255);
+    --bs-accordion-bg: rgb(45, 45, 45);
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-radius: none;
+}
+
+.faq-section .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.faq-section .accordion-item .accordion-body {
+    font-size: 1.5rem;
+    border-top: black 2px solid;
+}
+
+.faq-section .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.faq-section .accordion-button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
+}
+
+.faq-section .accordion-button::after {
+    content: "+";
+    background-image: none;
+    position: absolute;
+    height: 30px;
+    font-size: 50px;
+    top: 5px;
+    right: 45px;
+}
+
+.faq-section .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: "\00d7";
+}
+
+.faq-section h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+/* footer */
+footer {
+    border-top: 8px solid #232323;
+}
+.number p{
+    color: rgb(161, 160, 160);
+}
+.number a{
+font-size: 1rem;
+}
+footer a {
+    color: rgb(161, 160, 160);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+.country{
+    color: rgb(161, 160, 160);
+}
+
+/* media queries */
+
+@media (max-width:768px){
+    .logo-img {
+        width: 22%;
+    }
+    .main-title{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    .red-btn{
+        font-size: 1rem;
+    }
+    .section-title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .main-second-title{
+        font-size: 1.2rem;
+    }
+    .main-third-title,
+    .section-details {
+        font-size: 1.125rem;
+    }
+    form .form-floating {
+        width: 50%;
+    }
+}
+@media (max-width:576px){
+    form .form-floating {
+        width: 90%;
+    }
+    .get-started-btn {
+        height: 48px;
+    }
+    .faq-mainhead {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .faq-section button {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .faq-section .accordion-item .accordion-body {
+        font-size: 1rem;
+    }
+    .faq-section .accordion-button::after {
+        right: 28px;
+        top: 8px;
+        font-size: 42px;
+    }
+}
+
+@media (max-width:426px){
+    .logo-img {
+        width: 37%;
+    }
+    .nav-lang {
+        margin-right: 10px;
+    }
+    .language select{
+        padding: 4px 17px 4px 22px;
+        font-size: 16px;
+    }
+    .language img{
+        top: 8px;
+        left: 3px;
+    }
+    .language .language-choose{
+        top: 15px;
+        right: -89px;
+    }
+    .login {
+        padding: 5px 8px;
+    }
+}
